@@ -18,5 +18,8 @@ public class Library {
     private String name;
     private String address;
     private String email;
+    @OneToOne
+    @JoinColumn(name = "book_id")
+    private Book book;
 
 }
